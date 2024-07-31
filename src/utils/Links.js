@@ -21,19 +21,19 @@ const links = [
   {
     id: 2,
     text: 'About',
-    path: 'about',
+    path: '/about',
     icon: <SiAboutdotme />,
   },
   {
     id: 4,
     text: 'Add Wheel',
-    path: 'add-wheel',
+    path: '/add-wheel',
     icon: <IoMdAdd />,
   },
   {
     id: 3,
     text: 'Dashborad',
-    path: 'dashboard',
+    path: '/dashboard',
     icon: <MdDashboardCustomize />,
   }
 ];
