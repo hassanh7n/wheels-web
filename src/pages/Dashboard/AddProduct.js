@@ -24,7 +24,7 @@ const AddProduct = () => {
   }
   return (
     <Wrapper>
-    <h4><Link className='link' to='/'>Back to home page?</Link></h4>
+    {/* <h4><Link className='link' to='/'>Back to home page?</Link></h4> */}
     {wheelStats.length > 0 && <ChartsContainerProduct/>}
     
     </Wrapper>

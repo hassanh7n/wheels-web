@@ -61,7 +61,7 @@ const { isLoading, sliderWheel, } = useSelector((store) => store.allWheel);
             <img src={images?.[0]?.url} alt={name} className='person-img' />
             <h5 className='name'>{name}</h5>
             <p className='text'>{type}</p>
-            <p className='pr'>{price}</p>
+            <p className='pr'>{price + "$"}</p>
             {/* <FaQuoteRight className='icon' /> */}
           </article>
         );

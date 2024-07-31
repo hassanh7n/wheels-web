@@ -38,7 +38,7 @@ const SearchContainer = () => {
     }
   return (
     <Wrapper>
-      <><Link className='link' to='/'><h4>Back to home page?</h4></Link></>
+      {/* <><Link className='link' to='/'><h4>Back to home page?</h4></Link></> */}
       <form className="form">
         <h4>search form</h4>
         <div className="from-center">
@@ -113,7 +113,7 @@ const SearchContainer = () => {
 
 
 const Wrapper = styled.main`
-margin: 0px 20px;
+margin: -30px 15px;
 .form {
     width: 100%;
     max-width: 100%;

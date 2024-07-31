@@ -68,8 +68,12 @@ const MyProducts = () => {
 }
 
 const Wrapper = styled.main`
+
 margin-top: 4rem;
 padding : 1rem;
+a {
+  color : black;
+}
 h2 {
   text-transform: none;
 }

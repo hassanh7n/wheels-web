@@ -23,7 +23,7 @@ const SingleWheel = () => {
     <Wrapper>
       <PageHero title={name} product />
       <div className='section section-center page'>
-        <Link to='/wheels' className='btn'>
+        <Link to='/' className='btn'>
           back to wheels
         </Link>
         <div className='product-center'>
@@ -75,9 +75,13 @@ const Wrapper = styled.main`
 margin : 1rem;
 margin-top : 2rem;
 padding: 1rem;
-background-color: rgb(200, 211, 234);
+/* background-color: rgb(200, 211, 234); */
+background-color: white;
 border-radius : 10px;
 padding-bottom : 5rem;
+.btn{
+  margin-bottom : 5px;
+}
 
   .product-center {
     display: grid;

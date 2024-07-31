@@ -23,9 +23,9 @@ const MyWheels = () => {
     } = useSelector((store) => store.allWheel)
     useEffect(() => {
       dispatch(allWheelsPublic())
-    }, [name, company, sort, category, type, page, location])
+    }, [name, company, sort, category, type, page, location, wheels.length])
     
-    console.log(isLoading, wheels, numOfPages, totalwheels);
+    // console.log(isLoading, wheels, numOfPages, totalwheels);
 
     if(isLoading === true){
         return(
@@ -49,7 +49,7 @@ const MyWheels = () => {
         <h5>
           {totalwheels} Product{wheels.length > 1 && 's'}    found
         </h5>
-        <div className="wheels">
+        <div className="wheel">
           {wheels.map((wheels) => {
             return(
               <a href={`/${wheels._id}`}>
@@ -78,9 +78,10 @@ const MyWheels = () => {
 
 
 const Wrapper = styled.main`
-margin-top: 0rem;
+
+margin-top: 4rem;
 padding : 1rem;
-a{
+a {
   color : black;
 }
 h2 {
@@ -89,34 +90,34 @@ h2 {
 & > h5 {
   font-weight: 700;
 }
-.wheels {
+.wheel {
   display: grid;
   grid-template-columns: 1fr;
   row-gap: 2rem;
 }
 @media (min-width: 390px) {
-  .wheels {
+  .wheel {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
 @media (min-width: 600px) {
-  .wheels {
+  .wheel {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
   }
 }
 @media (min-width: 790px) {
-  .wheels {
+  .wheel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr ;
     gap: 1rem;
   }
 }
 @media (min-width: 992px) {
-  .wheels {
+  .wheel {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 1rem;

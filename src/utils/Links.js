@@ -12,12 +12,12 @@ const links = [
     path: '/',
     icon: <FaHome />,
   },
-  {
-    id: 7,
-    text: 'Wheels',
-    path: 'wheels',
-    icon: <PiSteeringWheelBold />,
-  },
+  // {
+  //   id: 7,
+  //   text: 'Wheels',
+  //   path: 'wheels',
+  //   icon: <PiSteeringWheelBold />,
+  // },
   {
     id: 2,
     text: 'About',

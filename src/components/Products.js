@@ -19,19 +19,19 @@ const Products = ({name, images, price, _id, category, type, contactNo, discript
             <img src={images?.[0]?.url} alt="" />
         </header>
         <div className='content'>
-        <div className='content-center'>
-        <ProductInfo icon={<SiNamebase/>} text={name}/>
-        <div className="price">
-        <ProductInfo icon={<MdPriceChange />} className='price'  text={ price}/>
-        </div>
-        <ProductInfo icon={<FaLocationDot />} text={location}/>
-        </div>
+        <h3 className='name'>{name}</h3>
+        <h5 className='price'>{ price + "$"}</h5>
+        <p className='location'>{location}</p>
       </div>
     </Wrapper>
   )
 }
 
 const Wrapper = styled.main`
+:hover{
+    transform: scale(1.04);
+    transition: 0.5s;
+}
 background: var(--primary-50);
 border-radius: var(--borderRadius);
 display: grid;
@@ -42,6 +42,8 @@ box-shadow: var(--shadow-2);
 }
 header {
   padding: 1rem 1rem;
+  /* width : 100%;
+  height : 100%; */
   border-bottom: 1px solid var(--grey-100);
   display: grid;
   grid-template-columns: auto 1fr;
@@ -51,8 +53,20 @@ header {
   }
 }
 img{
-  width: 100%;
-  height: 180px;
+  display : flex;
+  width : 100%;
+  align-items: center;
+  justify-content : center;
+  height : auto;
+
+  @media (min-width: 500px) {
+    max-height : 140px;
+  min-height : 140px;
+}
+@media (min-width: 600px) {
+    max-height : 200px;
+  min-height : 200px;
+}
   display: grid;
   place-items: center;
   background: var(--primary-500);
@@ -92,22 +106,16 @@ img{
   background: #ffeeee;
 }
 .content {
-  padding: 1rem 1rem;
+  padding: 0rem 1rem;
 }
-.content-center {
+/* .content-center {
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 0.5rem;
-  @media (min-width: 576px) {
-    grid-template-columns: 1fr 1fr;
-  }
-  @media (min-width: 992px) {
-    grid-template-columns: 1fr;
-  }
-  @media (min-width: 1120px) {
-    grid-template-columns: 1fr 1fr;
-  }
+  /* row-gap: 0.5rem; */
+  @media (min-width: 600px) {
+    grid-template-columns: 1fr ;
 }
+} */
 
 .status {
   border-radius: var(--borderRadius);
@@ -118,26 +126,16 @@ img{
   height: 30px;
   margin-top: 0.5rem;
 }
-footer {
-  margin-top: 1rem;
-}
-.edit-btn,
-.delete-btn {
-  letter-spacing: var(--letterSpacing);
-  cursor: pointer;
-  height: 30px;
-}
-.edit-btn {
-  color: var(--green-dark);
-  background: var(--green-light);
-  margin-right: 0.5rem;
-}
-.delete-btn {
-  color: var(--red-dark);
-  background: var(--red-light);
-}
+
 &:hover .actions {
   visibility: visible;
+}
+.location{
+  color : grey;
+}
+.price,
+.location{
+  margin-top : -25px;
 }
 `;
 

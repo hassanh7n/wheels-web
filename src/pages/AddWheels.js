@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import FormRowSelect from './FormRowSelect';
 import FormRow from './FormRow';
 import { useDispatch, useSelector } from 'react-redux';
+import {Navbar} from '../components'
 import { toast } from 'react-toastify';
 import styled from 'styled-components';
 import { handleChange, createProduct, clearValues, uploadImages, updateWheel } from '../features/Wheels';
@@ -106,17 +107,18 @@ const AddWheels = () => {
 
   return (
     <>
-    <div className="div">
+    <Navbar />
+    {/* <div className="div">
     <h4 className=''><Link className='link' to='/'>Back to home page?</Link></h4>
-    </div>
+    </div> */}
     <Wrapper>
     <form  className="form" onSubmit={handleSubmit}>
       {/* <h3>{isEditing ? 'edit job' : 'add job ' }</h3> */}
     <div className="form-center">
       {!isEditing && (
         <div className="input">
-        <label for="fileUpload">Upload images</label>
-        <input className='file-input' onChange={handleImage} type="file" name="img" id="" placeholder='choose file' multiple />
+        <label  for="fileUpload">Upload images</label>
+        <input className='file-input' onChange={handleImage} type="file" name="img" id="file-input" placeholder='choose file' multiple />
         </div>
       )}
       {/* name */}
@@ -223,11 +225,20 @@ const AddWheels = () => {
 
 
 const Wrapper = styled.main`
+
 border-radius: var(--borderRadius);
-margin : 20px;
+margin : 50px 20px;
 background: var(--primary-50);
 padding: 3rem 2rem 4rem;
 box-shadow: var(--shadow-2);
+#file-input::file-selector-button{
+  /* margin-top : 2.1rem; */
+  font-weight: bold;
+  color: dodgerblue;
+  padding: 0.5em;
+  border: thin solid grey;
+  border-radius: 3px;
+}
 .link{
   color : #00000096;
 }

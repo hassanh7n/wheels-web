@@ -6,10 +6,12 @@ import 'react-toastify/dist/ReactToastify.css';
 import {Landing, Error, About, Wheels, ProtectedRoutes, AddWheels} from './pages';
 import {Dashborad, Register, Login} from './pages/Dashboard'
 import { SingleWheel } from './components';
+import styled from 'styled-components'
 
 const App = () => {
   return (
     // <Landing/>
+    <Wrapper>
     <BrowserRouter>
       <Routes>
       <Route path='/' element={
@@ -36,7 +38,10 @@ const App = () => {
       </Routes>
       <ToastContainer position='top-center' />
     </BrowserRouter>
+    </Wrapper>
   )
 }
+const Wrapper = styled.main`
 
+`
 export default App

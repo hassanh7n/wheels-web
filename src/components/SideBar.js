@@ -36,6 +36,7 @@ const SideBar = () => {
 
 
   const Wrapper = styled.main`
+
   @media (min-width: 992px) {
       display: none;
     }
@@ -44,9 +45,10 @@ const SideBar = () => {
       gap : 10px;
     }
     .sidebar-container {
+      background-color : #f2f3f3;
       position: fixed;
       inset: 0;
-      background: #c8d3ea;
+      
       display: flex;
       justify-content: center;
       align-items: center;
