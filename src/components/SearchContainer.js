@@ -149,7 +149,7 @@ margin: -30px 15px;
       grid-template-columns: 1fr 1fr 1fr;
     }
     .btn-block {
-      margin-top: 0;
+      margin-top: 0.3rem;
     }
   }
 `

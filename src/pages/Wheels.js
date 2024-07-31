@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react'
 import {Navbar, MyWheels, SearchContainer } from '../components'
+import Products from './Products'
 
 
 
@@ -9,7 +10,8 @@ const Wheels = () => {
     <div>
       
       <SearchContainer />
-      <MyWheels />
+      {/* <MyWheels /> */}
+      <Products />
     </div>
   )
 }

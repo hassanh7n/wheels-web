@@ -174,8 +174,9 @@ ul {
   background: var(--primary-700);
 }
 .btn-block {
-  width: 100%;
+  width: 94%;
 }
+
 .btn-hero {
   font-size: 1.25rem;
   padding: 0.5rem 1.25rem;
@@ -369,4 +370,13 @@ ul {
   width: 100vw;
   font-size: x-large;
   font-weight: 300;
+}
+
+@media (min-width: 360px){
+  .form-input,
+.form-select,
+.btn-block{
+    width: 100%;
+  }
+
 }
