@@ -10,15 +10,26 @@ const Product = ({name, images, price, _id, category, type, contactNo, discripti
   const {wheelId} = useSelector((store) => store.Wheel)
   return (
     <Wrapper>
-        <header>
+      {/* <a href={`/${_id}`}> */}
+      <header>
+        <a href={`/${_id}`}>
             <img src={images?.[0]?.url} alt="" />
+      </a>
+
         </header>
+        <a href={`/${_id}`}>
+
         <div className='content'>
         <h3 className='name'>{name}</h3>
         <h5 className='price '>{ price + "$"}</h5>
         <p className='location'>{location}</p>
         
       </div>
+      </a>
+
+        
+      {/* </a> */}
+        
     </Wrapper>
   )
 }

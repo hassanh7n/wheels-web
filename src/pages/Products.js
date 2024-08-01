@@ -7,6 +7,7 @@ import styled from 'styled-components'
 import Wheels from './Wheels'
 import Product from './Product'
 import PageBtnContainer from '../components/PageBtnContainer';
+import { Link } from 'react-router-dom'
 
 
 const Products = () => {
@@ -69,7 +70,9 @@ const Products = () => {
           } = wheel;
         return(
 
-          <a href={`/${wheel._id}`}>
+          // <a href={`/${wheel._id}`}>
+          
+          
             <Product 
             key={_id}
             _id={_id}
@@ -84,7 +87,7 @@ const Products = () => {
             contactNo={contactNo}
             color={color}
               />
-          </a>
+          
         
         )
     })}
