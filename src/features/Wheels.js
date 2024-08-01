@@ -153,7 +153,7 @@ const wheelSlice = createSlice({
             const {img} = payload;
             state.images = img;
             console.log(state.images);
-            toast.success("Images uploaded")
+            // toast.success("Images uploaded")
         })
         .addCase(uploadImages.rejected, (state, {payload}) => {
             state.isLoading = false

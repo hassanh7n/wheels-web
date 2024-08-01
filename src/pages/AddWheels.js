@@ -86,7 +86,7 @@ const AddWheels = () => {
 
       const handleImage = (e) =>{
         const files = Array.from(e.target.files);
-        console.log(files.length);
+        console.log(files);
         
         
            const formData = new FormData()
@@ -95,13 +95,14 @@ const AddWheels = () => {
             formData.append('file', file)
     
             })
+            dispatch(uploadImages(formData))
 
-            if(files.length === 1){
-                toast.error("Please select more than one image")
-            }else{
+            // if(files.length === 1){
+            //     toast.error("Please select more than one image")
+            // }else{
     
-                dispatch(uploadImages(formData))
-            }
+            //     dispatch(uploadImages(formData))
+            // }
             
     }
 
