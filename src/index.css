@@ -238,11 +238,19 @@ ul {
 .form-input,
 .form-textarea,
 .form-select {
-  width: 83%;
+  width: 80%;
   padding: 0.375rem 0.75rem;
   border-radius: var(--borderRadius);
   background: var(--backgroundColor);
   border: 1px solid var(--grey-200);
+}
+.form-inputt{
+  width: 75%;
+  padding: 0.375rem 0.75rem;
+  border-radius: var(--borderRadius);
+  background: var(--backgroundColor);
+  border: 1px solid var(--grey-200);
+  height: 35px;
 }
 .form-input,
 .form-select,
@@ -376,8 +384,23 @@ ul {
   font-size: x-large;
   font-weight: 300;
 }
+@media (min-width: 320px){
+  .form-input,
+.form-select,
+.btn-block{
+    width: 85%;
+  }
 
-@media (min-width: 365px){
+}
+@media (min-width: 345px){
+  .form-input,
+.form-select,
+.btn-block{
+    width: 90%;
+  }
+
+}
+@media (min-width: 360px){
   .form-input,
 .form-select,
 .btn-block{

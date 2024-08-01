@@ -8,7 +8,7 @@ const ProductImages = ({ images = [[]] }) => {
   
   return (
     <Wrapper>
-      <img src={main || images[0]?.url} alt='' className='main ' />
+      <img src={main || images[0]?.url} alt='' className='main' />
       
       <div className='gallery'>
         {images.map((image, index) => {
@@ -31,7 +31,7 @@ const ProductImages = ({ images = [[]] }) => {
 const Wrapper = styled.section`
 
   .main {
-    width : 90%;
+    width : 70%;
     height : auto;
   }
   img {
@@ -41,7 +41,7 @@ const Wrapper = styled.section`
     object-fit: cover;
   }
   .gallery {
-    border :  5px solid #a8a9a8;
+    border :  5px ;
     margin-top: 1rem;
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -54,9 +54,10 @@ const Wrapper = styled.section`
   .active {
     border: 2px solid var(--clr-primary-5);
   }
+  
   @media (max-width: 576px) {
     .main {
-      width : 100%;
+      width : 90%;
       height : auto;
     }
     .gallery {
@@ -65,6 +66,7 @@ const Wrapper = styled.section`
       }
     }
   }
+  
   @media (min-width: 992px) {
     .main {
       width : 100%;

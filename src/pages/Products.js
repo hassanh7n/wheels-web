@@ -44,7 +44,7 @@ const Products = () => {
       </Wrapper>
       )
     }
-  
+  console.log(wheels._id);
   return (
     <Wrapper>
 
@@ -52,6 +52,7 @@ const Products = () => {
         {totalwheels} Product{wheels.length > 1 && 's'}    found
         </h5>
         <div className="wheel">
+        
         {wheels.map((wheel) => {
         const {
           name,
@@ -67,6 +68,8 @@ const Products = () => {
            color
           } = wheel;
         return(
+
+          <a href={`/${wheel._id}`}>
             <Product 
             key={_id}
             _id={_id}
@@ -81,6 +84,8 @@ const Products = () => {
             contactNo={contactNo}
             color={color}
               />
+          </a>
+        
         )
     })}
         </div>
