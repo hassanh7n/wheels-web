@@ -74,16 +74,16 @@ const Navbar = () => {
 const Wrapper = styled.main`
 margin-bottom : 5px;
 box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.42);
-  -webkit-box-shadow: 0px -100px 0px 0px rgba(0,0,0,0.42);
-  -moz-box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.42);
+  -webkit-box-shadow: 5px -100px 5px 5px rgba(0,0,0,0.42);
+  -moz-box-shadow: 5px 5px 5px 5px rgba(0,0,0,0.42);
 .landing{
-    padding: 5px;
+    padding: 5px 0px;
     display: flex;
     justify-content: space-between;
     background-color: white;
-    box-shadow: 10px 10px 8px 10px rgba(0,0,0,0.42);
-  -webkit-box-shadow: 10px 0px 8px 10px rgba(0,0,0,0.42);
-  -moz-box-shadow: 10px 10px 8px 10px rgba(0,0,0,0.42);
+    box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.42);
+  -webkit-box-shadow: 10px 5px 0px 0px rgba(0,0,0,0.42);
+  -moz-box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.42);
 }
 .img{
     display: flex;
