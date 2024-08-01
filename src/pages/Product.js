@@ -40,7 +40,10 @@ border-radius: var(--borderRadius);
 display: grid;
 grid-template-rows: 1fr;
 box-shadow: var(--shadow-2);
-
+:hover{
+    transform: scale(1.03);
+    transition: ease-in;
+}
 header {
   padding: 1rem 1rem;
   border-bottom: 1px solid var(--grey-100);

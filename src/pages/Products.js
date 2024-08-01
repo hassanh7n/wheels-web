@@ -101,6 +101,7 @@ const Wrapper = styled.main`
 
 margin-top: 4rem;
 padding : 1rem;
+
 a {
   color : black;
 }

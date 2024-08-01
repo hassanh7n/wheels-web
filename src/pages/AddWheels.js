@@ -225,9 +225,10 @@ const AddWheels = () => {
 
 
 const Wrapper = styled.main`
-
+overflow-x: hidden;
+width : 100%;
 border-radius: var(--borderRadius);
-margin : 50px 20px;
+margin : 50px 10px;
 background: var(--primary-50);
 padding: 3rem 2rem 4rem;
 box-shadow: var(--shadow-2);
@@ -268,7 +269,7 @@ h3 {
 .btn-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  column-gap: 1rem;
+  column-gap: 0.3rem;
   align-self: flex-end;
   margin-top: 0.5rem;
   button {

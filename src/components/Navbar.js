@@ -88,7 +88,7 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.42);
 .img{
     display: flex;
     margin: 5px;
-    gap: 0.5rem;
+    gap: 0.3rem;
     /* position: absolute; */
 }
 .text{
@@ -127,7 +127,7 @@ li{
 }
 .toggle-btn {
     padding-top: 25px;
-    margin-right: 10px;
+    margin-right: 0px;
     background: transparent;
     border-color: transparent;
     font-size: 1.85rem;
