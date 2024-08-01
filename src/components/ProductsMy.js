@@ -18,7 +18,7 @@ const ProductsMy = ({name, images, price, _id, category, type, contactNo, discri
         <div className='content'>
         <div className='content-center'>
         <ProductInfo icon={<SiNamecheap/>} text={name}/>
-        <ProductInfo text={'' + price}/>
+        <ProductInfo text={'' + price + "$"}/>
         </div>
         <footer>
           <div className='actions'>
