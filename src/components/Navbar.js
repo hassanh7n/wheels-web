@@ -103,8 +103,11 @@ box-shadow: 0px 0px 8px 0px rgba(0,0,0,0.42);
     position: relative;
     animation: wheelrotation linear 1.5s infinite;
 }
+    .btn-container{
+    padding-right: 5px;
+    }
 .lists{
-    padding-top: 10px;
+    padding-top: 22px;
     /* margin-right: 0vw; */
 }
 
@@ -127,7 +130,7 @@ li{
 }
 .toggle-btn {
     padding-top: 25px;
-    margin-right: 0px;
+    margin-right: 5px;
     background: transparent;
     border-color: transparent;
     font-size: 1.85rem;
@@ -139,6 +142,10 @@ li{
     align-items: center;
     height: 50px;
 }
+
+  .btn-container {
+    margin-right : 0px;
+  }
 
 @media (min-width: 850px){
     .landing{
@@ -155,6 +162,7 @@ li{
 .btn-container {
     position: relative;
     padding-top: 22px;
+    margin-right : 5px;
   }
   .btn {
     
@@ -193,6 +201,7 @@ li{
     display: none;
     margin: 0;
   }
+ 
 
 @keyframes wheelrotation
   {
